@@ -1,13 +1,16 @@
 {
     "name": "barsukov/php-project-lvl1",
+    "bin": ["bin/brain-games"],
     "authors": [
         {
             "name": "barsukov2",
-            "email": "barsukov2@gmail.com",
-            "bin": [
-                "bin/brain-games"
-            ]
+            "email": "barsukov2@gmail.com"
         }
     ],
-    "require": {}
+    "autoload": {
+        "files": ["src/Cli.php"]
+    },
+    "require": {
+        "wp-cli/php-cli-tools": "^0.11.11"
+    }
 }
