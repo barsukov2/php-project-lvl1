@@ -1,12 +1,15 @@
 {
     "name": "barsukov/php-project-lvl1",
     "bin": ["bin/brain-games"],
+    "type": "library",
     "authors": [
         {
             "name": "barsukov2",
             "email": "barsukov2@gmail.com"
         }
     ],
+    "description": "php learning package",
+    "license": "MIT",
     "scripts": {
         "phpcs": "phpcs"
     },
