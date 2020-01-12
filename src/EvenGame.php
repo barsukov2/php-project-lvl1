@@ -29,7 +29,7 @@ function runEvenGame()
             line("'%s' is wrong answer ;(. Correct answer was '%s'", $answer, (isEven($randomNumber) ? 'yes' : 'no'));
             break;
         }
-    } 
+    }
     if ($answerCount === 3) {
         line('Congratulations, %s!', $name);
     }
