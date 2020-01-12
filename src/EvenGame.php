@@ -7,7 +7,8 @@ use function cli\prompt;
 use function BrainGames\BrainMath\getRandomInt;
 use function BrainGames\BrainMath\isEven;
 
-function runEvenGame() {
+function runEvenGame() 
+{
     line('Welcome to the Brain Game!'); 
     line('Answer "yes" if the number is even, otherwise answer "no".'); 
     $name = prompt('May I have your name?');
