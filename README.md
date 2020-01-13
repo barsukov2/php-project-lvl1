@@ -30,6 +30,6 @@ in a command shell.
 
 You need to answer is number even or not.
 
-3 right answers and you win! Good luck!
+3 correct answers and you win! Good luck!
 
 https://asciinema.org/a/293417
