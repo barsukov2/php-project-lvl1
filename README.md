@@ -16,7 +16,8 @@ $ composer global require barsukov/php-project-lvl1:dev-master
 
 in a command shell
 
-https://asciinema.org/a/293416
+[![asciicast](https://asciinema.org/a/293416.png)](https://asciinema.org/a/293416)
+
 
 Make sure that your $PATH variable contains Composer bin directory 
 
@@ -28,8 +29,9 @@ $ brain-even
 
 in a command shell.
 
+[![asciicast](https://asciinema.org/a/293417.png)](https://asciinema.org/a/293417)
+
 You need to answer is number even or not.
 
 3 correct answers and you win! Good luck!
 
-https://asciinema.org/a/293417
