@@ -5,5 +5,31 @@
 
 ### About
 I am learning PHP at https://ru.hexlet.io/
-And this is my first project
 
+And this is my very first project!
+Project contains an "even game".
+
+### Install
+To install this brain-games type 
+
+$ composer global require barsukov/php-project-lvl1:dev-master
+
+in a command shell
+
+https://asciinema.org/a/293416
+
+Make sure that your $PATH variable contains Composer bin directory 
+
+### Play
+
+After installation type
+
+$ brain-even
+
+in a command shell.
+
+You need to answer is number even or not.
+
+3 right answers and you win! Good luck!
+
+https://asciinema.org/a/293417
