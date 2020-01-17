@@ -1,8 +1,8 @@
 {
     "name": "barsukov/php-project-lvl1",
     "bin": [
-        "bin/brain-games",
-        "bin/brain-even"
+        "bin/brain-even",
+        "bin/brain-calc"
     ],
     "type": "library",
     "authors": [
@@ -18,9 +18,11 @@
     },
     "autoload": {
         "files": [
-            "src/Cli.php",
             "src/BrainMath.php",
-            "src/EvenGame.php"
+            "src/EvenGame.php",
+            "src/BrainInterface.php",
+            "src/games/Even.php",
+            "src/games/Calc.php"
         ]
     },
     "require": {

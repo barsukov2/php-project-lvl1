@@ -12,3 +12,5 @@ if (file_exists($autoloadPath1)) {
 use function BrainGames\EvenGame\runEvenGame;
 
 runEvenGame();
+
+//runGame(...)
