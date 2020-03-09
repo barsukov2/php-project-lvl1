@@ -2,29 +2,54 @@
 
 namespace BrainGames\Calc;
 
+use function BrainGames\Even\getRandomInt;
+use function BrainGames\Engine\engine;
 
-use function BrainGames\BrainMath\getRandomInt;
-use function BrainGames\BrainMath\getRandomOperation;
-use function BrainGames\BrainMath\getExpressionAnswer;
+const INTRO = 'What is the result of the expression?';
+const OPERATIONS = ['+', '-', '*'];
 
+function getRandomOperation()
+{
+    $arrRand = array_rand(OPERATIONS, 1);
+    return OPERATIONS[$arrRand];
+}
 
-function getCalcQuestion() 
+function getExpressionAndResult(): array
 {
     $operand1 = getRandomInt();
     $operand2 = getRandomInt();
     $operation = getRandomOperation();
 
-    return "{$operand1} {$operation} {$operand2}";
+    switch ($operation) {
+        case '+':
+            $result =  $operand1 + $operand2;
+            break;
+        case '-':
+            $result = $operand1 - $operand2;
+            break;
+        case '*':
+            $result = $operand1 * $operand2;
+            break;
+    }
+
+    return [
+        'question' => "{$operand1} {$operation} {$operand2}",
+        'answer' => $result
+    ];
 }
 
-function getCalcIntro()
+function getQuestionsAndAnswers(): array
 {
-    return 'What is the result of the expression?';
+    $questionsAndAnswers = [];
+    for ($i = 1; $i <= 3; $i++) {
+        $questionsAndAnswers[$i] = getExpressionAndResult();
+    }
+
+    return $questionsAndAnswers;
 }
 
-function getCalcCorrectAnswer(string $expr)
+function runGame()
 {
-    $arr = explode(" ", $expr);
-    return getExpressionAnswer($arr[0], $arr[2], $arr[1]);
-
+    $questionsAndAnswers = getQuestionsAndAnswers();
+    engine(INTRO, $questionsAndAnswers);
 }
