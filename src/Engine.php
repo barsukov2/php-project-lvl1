@@ -15,7 +15,7 @@ function engine(string $intro, array $questionsAndAnswers)
     line('Hello, %s!', $name);
 
     for ($i = 1; $i <= ROUNDS_COUNT; $i++) {
-        line('Question: %s', $questionsAndAnswers[$i]['question']); 
+        line('Question: %s', $questionsAndAnswers[$i]['question']);
         $userAnswer = prompt('Your answer: ');
 
         if ($userAnswer == $questionsAndAnswers[$i]['answer']) {
@@ -29,4 +29,3 @@ function engine(string $intro, array $questionsAndAnswers)
         }
     }
 }
-

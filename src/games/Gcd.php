@@ -9,7 +9,7 @@ const INTRO = 'Find the greatest common divisor of given numbers.';
 
 function getGcd(int $a, int $b): int
 {
-    return ($a % $b) ? getGcd($b,$a % $b) : $b;
+    return ($a % $b) ? getGcd($b, $a % $b) : $b;
 }
 
 function getQuestionsAndAnswers()
@@ -31,5 +31,3 @@ function runGame()
     $questionsAndAnswers = getQuestionsAndAnswers();
     engine(INTRO, $questionsAndAnswers);
 }
-
-
