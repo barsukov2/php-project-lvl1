@@ -7,7 +7,11 @@
 I am learning PHP at https://ru.hexlet.io/
 
 And this is my very first project!
-Project contains an "even game".
+
+It contains brain games: calc, even, GCD, prime, progression.
+
+3 correct answers in game and you win! Good luck!
+
 
 ### Install
 To install this brain-games type 
@@ -16,12 +20,12 @@ $ composer global require barsukov/php-project-lvl1:dev-master
 
 in a command shell
 
-[![asciicast](https://asciinema.org/a/293416.png)](https://asciinema.org/a/293416)
+[![asciicast](https://asciinema.org/a/308768.png)](https://asciinema.org/a/308768)
 
 
 Make sure that your $PATH variable contains Composer bin directory 
 
-### Play
+### Even game
 
 After installation type
 
@@ -29,9 +33,59 @@ $ brain-even
 
 in a command shell.
 
-[![asciicast](https://asciinema.org/a/293417.png)](https://asciinema.org/a/293417)
+[![asciicast](https://asciinema.org/a/308769.png)](https://asciinema.org/a/308769)
 
 You need to answer is number even or not.
 
-3 correct answers and you win! Good luck!
+### Calculator game
+
+After installation type
+
+$ brain-calc
+
+in a command shell.
+
+[![asciicast](https://asciinema.org/a/308771.png)](https://asciinema.org/a/308771)
+
+You need to solve the expressions.
+
+### Global common divisor game
+
+After installation type
+
+$ brain-gcd
+
+in a command shell.
+
+[![asciicast](https://asciinema.org/a/308772.png)](https://asciinema.org/a/308772)
+
+You need to find global common divisor of two numbers.
+
+### Prime game
+
+After installation type
+
+$ brain-prime
+
+in a command shell.
+
+[![asciicast](https://asciinema.org/a/308775.png)](https://asciinema.org/a/308775)
+
+You need to answer is number prime or not.
+
+### Progression game
+
+After installation type
+
+$ brain-progression
+
+in a command shell.
+
+[![asciicast](https://asciinema.org/a/308776.png)](https://asciinema.org/a/308776)
+
+You need to find missed element of progression.
+
+
+
+
 
