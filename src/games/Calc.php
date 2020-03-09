@@ -8,7 +8,7 @@ use function BrainGames\Engine\engine;
 const INTRO = 'What is the result of the expression?';
 const OPERATIONS = ['+', '-', '*'];
 
-function getRandomOperation()
+function getRandomOperation(): string
 {
     $arrRand = array_rand(OPERATIONS, 1);
     return OPERATIONS[$arrRand];

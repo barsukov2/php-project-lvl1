@@ -14,7 +14,7 @@ function isEven(int $num): bool
 function getRandomInt(): int
 {
     $minNumber = 0;
-    $maxNumber = 100;
+    $maxNumber = 30;
     return random_int($minNumber, $maxNumber);
 }
 
@@ -29,7 +29,7 @@ function getQuestionsAndAnswers(): array
     return $questionsAndAnswers;
 }
 
-function runGame()
+function runGame(): void
 {
     $questionsAndAnswers = getQuestionsAndAnswers();
     engine(INTRO, $questionsAndAnswers);

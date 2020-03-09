@@ -7,7 +7,7 @@ use function BrainGames\Engine\engine;
 
 const INTRO = 'Find the missing number of progression.';
 
-function getProgression()
+function getProgression(): array
 {
     $start = getRandomInt();
     $increase = getRandomInt();
@@ -20,7 +20,7 @@ function getProgression()
     return $progression;
 }
 
-function getQuestionsAndAnswers()
+function getQuestionsAndAnswers(): array
 {
     $questionsAndAnswers = [];
     for ($i = 1; $i <= 3; $i++) {
@@ -36,7 +36,7 @@ function getQuestionsAndAnswers()
     return $questionsAndAnswers;
 }
 
-function runGame()
+function runGame(): void
 {
     $questionsAndAnswers = getQuestionsAndAnswers();
     engine(INTRO, $questionsAndAnswers);

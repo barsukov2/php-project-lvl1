@@ -12,7 +12,7 @@ function getGcd(int $a, int $b): int
     return ($a % $b) ? getGcd($b, $a % $b) : $b;
 }
 
-function getQuestionsAndAnswers()
+function getQuestionsAndAnswers(): array
 {
     $questionsAndAnswers = [];
     for ($i = 1; $i <= 3; $i++) {
@@ -26,7 +26,7 @@ function getQuestionsAndAnswers()
     return $questionsAndAnswers;
 }
 
-function runGame()
+function runGame(): void
 {
     $questionsAndAnswers = getQuestionsAndAnswers();
     engine(INTRO, $questionsAndAnswers);
