@@ -20,6 +20,7 @@ function isPrime(int $number): bool
 
     return true;
 }
+
 function getQuestionsAndAnswers(): array
 {
     $questionsAndAnswers = [];
