@@ -5,7 +5,7 @@ namespace BrainGames\Progression;
 use function BrainGames\Even\getRandomInt;
 use function BrainGames\Engine\engine;
 
-const INTRO = 'Find the missing number of progression.';
+const INTRO = 'What number is missing in the progression?';
 
 function getProgression(): array
 {
