@@ -81,7 +81,7 @@ $ brain-progression
 
 in a command shell.
 
-[![asciicast](https://asciinema.org/a/308776.png)](https://asciinema.org/a/308776)
+[![asciicast](https://asciinema.org/a/309017.png)](https://asciinema.org/a/309017)
 
 You need to find missed element of progression.
 
