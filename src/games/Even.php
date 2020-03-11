@@ -15,7 +15,7 @@ function isEven(int $num): bool
 
 function getRandomInt(): int
 {
-    $minNumber = 0;
+    $minNumber = 1;
     $maxNumber = 30;
     return random_int($minNumber, $maxNumber);
 }
