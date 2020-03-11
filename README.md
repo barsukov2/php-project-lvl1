@@ -33,7 +33,7 @@ $ brain-even
 
 in a command shell.
 
-[![asciicast](https://asciinema.org/a/308769.png)](https://asciinema.org/a/308769)
+[![asciicast](https://asciinema.org/a/309355.png)](https://asciinema.org/a/309355)
 
 You need to answer is number even or not.
 
@@ -45,7 +45,7 @@ $ brain-calc
 
 in a command shell.
 
-[![asciicast](https://asciinema.org/a/308771.png)](https://asciinema.org/a/308771)
+[![asciicast](https://asciinema.org/a/309356.png)](https://asciinema.org/a/309356)
 
 You need to solve the expressions.
 
@@ -57,7 +57,7 @@ $ brain-gcd
 
 in a command shell.
 
-[![asciicast](https://asciinema.org/a/308772.png)](https://asciinema.org/a/308772)
+[![asciicast](https://asciinema.org/a/309362.png)](https://asciinema.org/a/309362)
 
 You need to find global common divisor of two numbers.
 
@@ -69,7 +69,7 @@ $ brain-prime
 
 in a command shell.
 
-[![asciicast](https://asciinema.org/a/308775.png)](https://asciinema.org/a/308775)
+[![asciicast](https://asciinema.org/a/309363.png)](https://asciinema.org/a/309363)
 
 You need to answer is number prime or not.
 
@@ -81,7 +81,7 @@ $ brain-progression
 
 in a command shell.
 
-[![asciicast](https://asciinema.org/a/309017.png)](https://asciinema.org/a/309017)
+[![asciicast](https://asciinema.org/a/309366.png)](https://asciinema.org/a/309366)
 
 You need to find missed element of progression.
 
