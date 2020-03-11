@@ -4,6 +4,7 @@ namespace BrainGames\Prime;
 
 use function BrainGames\Engine\engine;
 use function BrainGames\Even\getRandomInt;
+
 use const BrainGames\Engine\ROUNDS_COUNT;
 
 const INTRO = 'Answer "yes" if given number is prime. Otherwise answer "no".';
@@ -36,5 +37,4 @@ function runGame(): void
 {
     $questionsAndAnswers = getQuestionsAndAnswers();
     engine(INTRO, $questionsAndAnswers);
-
 }

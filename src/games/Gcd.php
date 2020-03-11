@@ -4,6 +4,7 @@ namespace BrainGames\Gcd;
 
 use function BrainGames\Even\getRandomInt;
 use function BrainGames\Engine\engine;
+
 use const BrainGames\Engine\ROUNDS_COUNT;
 
 const INTRO = 'Find the greatest common divisor of given numbers.';
