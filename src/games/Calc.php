@@ -4,6 +4,7 @@ namespace BrainGames\Calc;
 
 use function BrainGames\Even\getRandomInt;
 use function BrainGames\Engine\engine;
+use const BrainGames\Engine\ROUNDS_COUNT;
 
 const INTRO = 'What is the result of the expression?';
 const OPERATIONS = ['+', '-', '*'];
@@ -41,7 +42,7 @@ function getExpressionAndResult(): array
 function getQuestionsAndAnswers(): array
 {
     $questionsAndAnswers = [];
-    for ($i = 1; $i <= 3; $i++) {
+    for ($i = 1; $i <= ROUNDS_COUNT; $i++) {
         $questionsAndAnswers[$i] = getExpressionAndResult();
     }
 

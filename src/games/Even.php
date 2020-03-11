@@ -3,6 +3,7 @@
 namespace BrainGames\Even;
 
 use function BrainGames\Engine\engine;
+use const BrainGames\Engine\ROUNDS_COUNT;
 
 const INTRO = 'Answer "yes" if the number is even, otherwise answer "no".';
 
@@ -21,7 +22,7 @@ function getRandomInt(): int
 function getQuestionsAndAnswers(): array
 {
     $questionsAndAnswers = [];
-    for ($i = 1; $i <= 3; $i++) {
+    for ($i = 1; $i <= ROUNDS_COUNT; $i++) {
         $questionsAndAnswers[$i]['question'] = getRandomInt();
         $questionsAndAnswers[$i]['answer'] = isEven($questionsAndAnswers[$i]['question']) ? 'yes' : 'no';
     }
