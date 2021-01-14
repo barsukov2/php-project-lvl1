@@ -2,7 +2,7 @@
 
 namespace BrainGames\Calc;
 
-use function BrainGames\Even\getRandomInt;
+use function BrainGames\Utils\getRandomInt;
 use function BrainGames\Engine\engine;
 
 use const BrainGames\Engine\ROUNDS_COUNT;
@@ -12,11 +12,12 @@ const OPERATIONS = ['+', '-', '*'];
 
 function getRandomOperation(): string
 {
-    $arrRand = array_rand(OPERATIONS, 1);
-    return OPERATIONS[$arrRand];
+    $randOperationIndex = array_rand(OPERATIONS, 1);
+
+    return OPERATIONS[$randOperationIndex];
 }
 
-function getExpressionAndResult(): array
+function getRandomQuestionAndAnswer(): array
 {
     $operand1 = getRandomInt();
     $operand2 = getRandomInt();
@@ -43,8 +44,8 @@ function getExpressionAndResult(): array
 function getQuestionsAndAnswers(): array
 {
     $questionsAndAnswers = [];
-    for ($i = 1; $i <= ROUNDS_COUNT; $i++) {
-        $questionsAndAnswers[$i] = getExpressionAndResult();
+    for ($i = 0; $i < ROUNDS_COUNT; $i++) {
+        $questionsAndAnswers[$i] = getRandomQuestionAndAnswer();
     }
 
     return $questionsAndAnswers;

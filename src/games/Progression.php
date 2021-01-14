@@ -2,21 +2,18 @@
 
 namespace BrainGames\Progression;
 
-use function BrainGames\Even\getRandomInt;
+use function BrainGames\Utils\getRandomInt;
 use function BrainGames\Engine\engine;
 
 use const BrainGames\Engine\ROUNDS_COUNT;
 
 const INTRO = 'What number is missing in the progression?';
+const PROGRESSION_COUNT = 7;
 
-function getProgression(): array
+function getProgression(int $start, int $diff): array
 {
-    $start = getRandomInt();
-    $increase = getRandomInt();
-    $progression[0] = $start;
-
-    for ($i = 1; $i <= 8; $i++) {
-        $progression[$i] = $progression[$i - 1] + $increase;
+    for ($i = 0; $i < PROGRESSION_COUNT; $i++) {
+        $progression[$i] = $start + $diff * $i;
     }
 
     return $progression;
@@ -25,8 +22,11 @@ function getProgression(): array
 function getQuestionsAndAnswers(): array
 {
     $questionsAndAnswers = [];
-    for ($i = 1; $i <= ROUNDS_COUNT; $i++) {
-        $progression = getProgression();
+    for ($i = 0; $i < ROUNDS_COUNT; $i++) {
+        $start = getRandomInt();
+        $diff = getRandomInt();
+        $progression = getProgression($start, $diff);
+
         $maskedKey = array_rand($progression);
         $maskedValue = $progression[$maskedKey];
         $maskedProgression = array_replace($progression, [$maskedKey => '..']);

@@ -3,6 +3,7 @@
 namespace BrainGames\Even;
 
 use function BrainGames\Engine\engine;
+use function BrainGames\Utils\getRandomInt;
 
 use const BrainGames\Engine\ROUNDS_COUNT;
 
@@ -13,17 +14,10 @@ function isEven(int $num): bool
     return ($num % 2 === 0);
 }
 
-function getRandomInt(): int
-{
-    $minNumber = 1;
-    $maxNumber = 30;
-    return random_int($minNumber, $maxNumber);
-}
-
 function getQuestionsAndAnswers(): array
 {
     $questionsAndAnswers = [];
-    for ($i = 1; $i <= ROUNDS_COUNT; $i++) {
+    for ($i = 0; $i < ROUNDS_COUNT; $i++) {
         $questionsAndAnswers[$i]['question'] = getRandomInt();
         $questionsAndAnswers[$i]['answer'] = isEven($questionsAndAnswers[$i]['question']) ? 'yes' : 'no';
     }

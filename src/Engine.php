@@ -14,18 +14,17 @@ function engine(string $intro, array $questionsAndAnswers)
     $name = prompt('May I have your name?');
     line('Hello, %s!', $name);
 
-    for ($i = 1; $i <= ROUNDS_COUNT; $i++) {
-        line('Question: %s', $questionsAndAnswers[$i]['question']);
+    foreach ($questionsAndAnswers as ['question' => $question, 'answer' => $answer]) {
+        line('Question: %s', $question);
         $userAnswer = prompt('Your answer: ');
 
-        if ($userAnswer == $questionsAndAnswers[$i]['answer']) {
+        if ($userAnswer == $answer) {
             line('Correct!');
         } else {
-            line("'%s' is wrong answer ;(. Correct answer was '%s'", $userAnswer, $questionsAndAnswers[$i]['answer']);
-            break;
+            line("'%s' is wrong answer ;(. Correct answer was '%s'", $userAnswer, $answer);
+            return;
         }
-        if ($i === 3) {
-            line('Congratulations, %s!', $name);
-        }
+
+        line('Congratulations, %s!', $name);
     }
 }
